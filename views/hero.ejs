@@ -1,5 +1,10 @@
 <%- include('partials/header.ejs')%> 
 
 <h1>I am <%= hero %> </h1>
+<% if(hero === 'SpiderMan'){ %>
+    <p>Yes, I am Peter Parker!!</p>
+<%} else{ %>
+    <p>No, Boy</p>
 
+<% } %>
 <%- include('partials/footer.ejs')%> 

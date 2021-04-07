@@ -14,6 +14,9 @@ app.get('/:hero',function(req,res){
     //console.log(hero);
 })
 
+app.get('/list/member1',function(req,res){
+    res.render('memver1.ejs',{Name:'Peter Parker', codename:'SpiderMan'});
+});
 app.listen('3000',function(req,res){
     console.log('Server is running')
 });
