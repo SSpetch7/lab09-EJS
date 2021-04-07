@@ -15,8 +15,19 @@ app.get('/:hero',function(req,res){
 })
 
 app.get('/list/member1',function(req,res){
-    res.render('memver1.ejs',{Name:'Peter Parker', codename:'SpiderMan'});
+    res.render('member1.ejs',{Name:'Peter Parker', codename:'SpiderMan'});
 });
+
+app.get('/list/member2',function(req,res){
+    member = [
+        {Name:'Tony Stark',codename:'IronMan'},
+        {Name:'Perter Parker',codename:'SpideMan'},
+        {Name:'T-Challa',codename:'BlackPanther'}
+    ]
+        res.render('member2.ejs',{member:member});
+    
+}); 
+
 app.listen('3000',function(req,res){
     console.log('Server is running')
 });

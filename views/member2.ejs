@@ -1,0 +1,10 @@
+<%- include('partials/header.ejs')%> 
+<h1>Member list</h1>
+
+<% for(let i=0 ; i < member.length;i++){ %>
+    <li><%= member[i].Name + " codename " + member[i].codename %></li>
+<% } %>
+
+
+
+<%- include('partials/footer.ejs')%> 
